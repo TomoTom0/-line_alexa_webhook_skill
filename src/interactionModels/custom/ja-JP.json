@@ -1,0 +1,108 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "ストップ",
+            "ストップして",
+            "止めて",
+            "やめて"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "yes",
+            "どうぞ",
+            "お願い",
+            "はい"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ReadIntent",
+          "samples": [
+            "読め",
+            "読んでください",
+            "読んで",
+            "読む",
+            "言って",
+            "ゆって",
+            "なに"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Date",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "mode",
+              "type": "mode"
+            }
+          ],
+          "name": "CheckIntent",
+          "samples": [
+            "ラインを確認して",
+            "確認して",
+            "{mode} で確認して ",
+            "{Date} を確認して "
+          ]
+        },
+        {
+          "slots": [],
+          "name": "RegisterIntent",
+          "samples": [
+            "登録して",
+            "情報を再登録して",
+            "情報を登録して",
+            "再登録して"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "だめ",
+            "No",
+            "いいえ"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "手動"
+              },
+              "id": "manual"
+            },
+            {
+              "name": {
+                "value": "自動"
+              },
+              "id": "auto"
+            }
+          ],
+          "name": "mode"
+        }
+      ],
+      "invocationName": "ラインを確認"
+    }
+  }
+}
